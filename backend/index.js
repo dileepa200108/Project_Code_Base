@@ -18,11 +18,11 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.send("This is from the Railway Backend.");
+  res.send("This is from the Railway Backenddddd.");
 });
 
 app.get("/test", (req, res) => {
-  res.send("This is a test route.");
+  res.send("This is a test route for the backend.");
 })
 
 // MongoDB connection
