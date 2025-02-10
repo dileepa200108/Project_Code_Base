@@ -8,7 +8,7 @@ const app = express();
 
 // CORS configuration to allow only your frontend URL
 const corsOptions = {
-  origin: "http://localhost:5173/",  // Allow frontend domain
+  origin: "*",  // Allow frontend domain
   methods: ["GET", "POST", "PUT", "DELETE"],  // Allow specific HTTP methods
   allowedHeaders: ["Content-Type"],  // Allow headers
 };
