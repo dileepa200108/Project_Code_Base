@@ -1,13 +1,11 @@
-import { Button } from "@nextui-org/react";
+import Home from "./pages/Home";
 
 
 const App = () => {
 
-
-
   return (
-    <div>
-      
+    <div className="bg-black">
+      <Home/>
     </div>
   );
 };
