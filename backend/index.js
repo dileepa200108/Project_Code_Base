@@ -18,7 +18,7 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.send("This is from the Railway Backenddddd.");
+  res.send("This is from the Backend.");
 });
 
 app.get("/test", (req, res) => {
