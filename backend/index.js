@@ -8,7 +8,7 @@ const app = express();
 
 // CORS configuration to allow only your frontend URL
 const corsOptions = {
-  origin: "https://myapp20010828.vercel.app",  // Allow frontend domain
+  origin: "http://localhost:5173/",  // Allow frontend domain
   methods: ["GET", "POST", "PUT", "DELETE"],  // Allow specific HTTP methods
   allowedHeaders: ["Content-Type"],  // Allow headers
 };
@@ -18,8 +18,12 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.send("This is from the Vercel Backend.");
+  res.send("This is from the Railway Backend.");
 });
+
+app.get("/test", (req, res) => {
+  res.send("This is a test route.");
+})
 
 // MongoDB connection
 mongoose.connect(mongoDBURL)
