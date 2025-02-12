@@ -1,11 +1,12 @@
 import Home from "./pages/Home";
+import NewUser from "./components/user/add_new_user_form"
 
 
 const App = () => {
 
   return (
-    <div className="bg-black">
-      <Home/>
+    <div className="bg-white">
+      <NewUser/>
     </div>
   );
 };

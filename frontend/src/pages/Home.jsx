@@ -32,6 +32,9 @@ const Home = () => {
       <Button color="secondary" onPress={onOpen}>
         Foundation Modal
       </Button>
+      
+
+
       <Modal
         backdrop="opaque"
         classNames={{
