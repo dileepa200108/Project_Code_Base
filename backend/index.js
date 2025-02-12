@@ -4,6 +4,9 @@ import cors from "cors";
 import mongoose from "mongoose";
 import { mongoDBURL } from "./config.js";
 
+
+import userRoutes from "./routes/userRoutes.js";
+
 const app = express();
 
 // CORS configuration to allow only your frontend URL
@@ -38,6 +41,9 @@ mongoose.connect(mongoDBURL)
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 })
+
+
+app.use("/users", userRoutes);
 
 
 export default app;
