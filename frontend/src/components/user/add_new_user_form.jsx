@@ -17,7 +17,7 @@ export default function App() {
 
     try {
       const response = await createNewUser(data.username, data.email, data.age);
-      toast.success("User Created Successfully!");
+      toast.success("User Created Successfully.Yaaaay!");
     } catch (err) {
       if (err.response && err.response.status === 400) {
         toast.error("User with this email already exists.");
